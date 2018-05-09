@@ -1,0 +1,27 @@
+<div class="row">
+
+  <div class="col-md-5">
+    <h1>
+      <strong>Name:</strong>
+      <%= @expedition.name %>
+    </h1>
+    <div class="col-lg-offset-3">
+      <div class="form-group">
+        <h4>
+          <strong>Target:</strong>
+          <%= @expedition.target %>
+        </h4>
+      </div>
+      <div class="form-group">
+        <h4>
+          <strong>Plan:</strong>
+          <%= @expedition.plan %>
+        </h4>
+      </div>
+
+      <%= link_to 'Edit', edit_expedition_path(@expedition), class: 'badge' %>
+      <%= link_to 'Back', expeditions_path, class: 'badge' %>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,54 @@
+<%= form_with(model: @expedition, local: true) do |form| %>
+
+  <% if @expedition.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@expedition.errors.count, 'error') %>
+        prohibited this article from being saved:
+      </h2>
+      <ul>
+        <% @expedition.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <div class="form-group">
+        <%= form.label :name %><br>
+        <%= form.text_field( :name, class: 'form-control') %>
+      </div>
+      <div class="form-group">
+        <%= form.label(:target) %><br>
+        <%= form.text_field( :target, class: 'form-control') %>
+      </div>
+      <div class="form-group">
+        <%= form.label(:plan) %><br>
+        <%= form.text_area(:plan, class: 'form-control') %>
+      </div>
+      <div class="form-group">
+        <div class="col-md-6">
+          <%= form.label(:start) %><br>
+          <%= form.date_field(:start, :placeholder => 'dd/mm/yyyy', class: 'form-control datepicker') %>
+        </div>
+        <div class="col-md-6">
+          <%= form.label(:finish) %><br>
+          <%= form.date_field(:finish,:placeholder => 'dd/mm/yyyy', class: 'form-control datepicker') %>
+        </div>
+        <script>
+            $( document ).ready(function() {
+                $('.datepicker').datepicker({format: 'dd/mm/yyyy'});
+            });
+        </script>
+      </div>
+
+    </div>
+  </div>
+  <br>
+  <div class="center">
+    <%= form.submit(class: 'btn btn-success') %>
+  </div>
+<% end %>

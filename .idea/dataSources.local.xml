@@ -1,15 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="Rails discovery-app: test" uuid="e0706064-b79d-4e4e-b9c6-0dfd34aea774">
+    <data-source name="discovery@localhost" uuid="d20d69c2-a6d8-4d92-94aa-1d489bb76003">
+      <database-info product="PostgreSQL" version="9.5.12" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.2">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>discovery</user-name>
+      <introspection-schemas>discovery:public</introspection-schemas>
+    </data-source>
+    <data-source name="Rails discovery-app: test" uuid="e15dd785-b8bb-4490-9322-6500a25d3c65">
       <database-info product="PostgreSQL" version="9.5.12" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.2">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
       <user-name>discovery</user-name>
-      <introspection-schemas>discovery-test:public</introspection-schemas>
+      <introspection-schemas>discovery_test:public</introspection-schemas>
     </data-source>
-    <data-source name="Rails discovery-app: development" uuid="07fb2810-7f0e-47ad-9efe-f5019c0f955e">
+    <data-source name="Rails discovery-app: development" uuid="e68fb189-2e0e-4ef0-a81f-b3f5b69e9a14">
+      <database-info product="PostgreSQL" version="9.5.12" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.2">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <user-name>discovery</user-name>
+      <introspection-schemas>discovery:public</introspection-schemas>
+    </data-source>
+    <data-source name="Rails discovery-app: production" uuid="93e04c2b-f13d-4f88-b556-bed4d26d5182">
       <database-info product="PostgreSQL" version="9.5.12" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.2">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
