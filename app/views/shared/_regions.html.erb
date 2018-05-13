@@ -1,0 +1,12 @@
+<ul class="regions">
+  <% @regions.each do |region| %>
+    <li>
+      <%= image_tag(region.image.url(:thumb), class: 'img-circle') %>
+      <%= link_to region.name, region %>
+      <%= region.space_type %>
+      <%= region.space %>
+      <br>
+      <%= region.description %>
+    </li>
+  <% end %>
+</ul>

@@ -10,11 +10,12 @@
 # Ignore all logfiles and tempfiles.
 /log/*
 /tmp/*
+/test/*
 !/log/.keep
 !/tmp/.keep
-/config/database.yml
 !/.idea/*
 
+/config/database.yml
 
 /node_modules
 /yarn-error.log

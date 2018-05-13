@@ -1,0 +1,53 @@
+<%= form_for @region, url: regions_path, html: {multipart: true }  do |form| %>
+
+  <% if @region.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@region.errors.count, 'error') %>
+        prohibited this article from being saved:
+      </h2>
+      <ul>
+        <% @region.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <div class="form-group">
+        <%= form.label :name %><br>
+        <%= form.text_field( :name, class: 'form-control') %>
+      </div>
+      <div class="form-group">
+        <%= form.label(:type) %><br>
+        <%= form.text_field(:space_type, class: 'form-control') %>
+      </div>
+      <div class="form-group">
+        <%= form.label(:space) %><br>
+        <%= form.text_field(:space, class: 'form-control') %>
+      </div>
+      <div class="form-group">
+        <%= form.label(:description) %><br>
+        <%= form.text_area(:description, class: 'form-control') %>
+      </div>
+      <div class="form-group">
+        <div class="col-md-6">
+          <%= form.label(:image) %><br>
+          <%= form.file_field :image %>
+        </div>
+        <div class="col-md-6">
+          <%= form.label(:level) %><br>
+          <%= form.select(:danger_level, options_for_select([[1,1],[2,2],[3,3],[4,4],[5,5],
+                                                             [6,6],[7,7],[8,8],[9,9],[10,10]],5), class: 'control') %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="center">
+    <%= form.submit(class: 'btn btn-success') %>
+  </div>
+<% end %>

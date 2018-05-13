@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180509214630) do
+ActiveRecord::Schema.define(version: 20180513103819) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,6 +25,41 @@ ActiveRecord::Schema.define(version: 20180509214630) do
     t.datetime "updated_at", null: false
     t.integer "user_id"
     t.index ["name"], name: "index_expeditions_on_name"
+  end
+
+  create_table "forms", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "expedition_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["expedition_id"], name: "index_forms_on_expedition_id"
+    t.index ["user_id"], name: "index_forms_on_user_id"
+  end
+
+  create_table "regions", force: :cascade do |t|
+    t.string "name", null: false
+    t.string "space_type"
+    t.string "description"
+    t.integer "danger_level"
+    t.string "space"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "image_file_name"
+    t.string "image_content_type"
+    t.integer "image_file_size"
+    t.datetime "image_updated_at"
+  end
+
+  create_table "teleshows", force: :cascade do |t|
+    t.string "chanel"
+    t.string "name"
+    t.string "info"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "image_file_name"
+    t.string "image_content_type"
+    t.integer "image_file_size"
+    t.datetime "image_updated_at"
   end
 
   create_table "users", force: :cascade do |t|

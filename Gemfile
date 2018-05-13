@@ -15,6 +15,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 
 # for front
+gem 'paperclip', git: 'git://github.com/thoughtbot/paperclip.git'
 gem 'sass-rails', '~> 5.0'
 gem 'bootstrap-sass'
 gem 'jquery-rails'
