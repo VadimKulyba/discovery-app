@@ -1,0 +1,44 @@
+<%= form_for @teleshow, url: teleshows_path, html: {multipart: true }  do |form| %>
+
+  <% if @teleshow.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@teleshow.errors.count, 'error') %>
+        prohibited this TV-show from being saved:
+      </h2>
+      <ul>
+        <% @teleshow.errors.full_messages.each do |msg| %>
+          <li class="center"><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <div class="form-group">
+        <%= form.label :name %><br>
+        <%= form.text_field( :name, class: 'form-control') %>
+      </div>
+      <div class="form-group">
+        <%= form.label(:chanel) %><br>
+        <%= form.text_field(:chanel, class: 'form-control') %>
+      </div>
+      <div class="form-group">
+        <%= form.label(:info) %><br>
+        <%= form.text_area(:info, class: 'form-control') %>
+      </div>
+      <div class="form-group">
+        <div class="col-md-6">
+          <%= form.label(:image) %><br>
+          <%= form.file_field :image %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="center">
+    <%= form.submit(class: 'btn btn-success') %>
+  </div>
+<% end %>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180513103819) do
+ActiveRecord::Schema.define(version: 20180514232005) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,7 +24,28 @@ ActiveRecord::Schema.define(version: 20180513103819) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "user_id"
+    t.string "cover_file_name"
+    t.string "cover_content_type"
+    t.integer "cover_file_size"
+    t.datetime "cover_updated_at"
     t.index ["name"], name: "index_expeditions_on_name"
+  end
+
+  create_table "expeditions_positions", id: false, force: :cascade do |t|
+    t.bigint "expedition_id", null: false
+    t.bigint "position_id", null: false
+    t.integer "count"
+  end
+
+  create_table "expeditions_regions", id: false, force: :cascade do |t|
+    t.bigint "expedition_id", null: false
+    t.bigint "region_id", null: false
+    t.integer "distance"
+  end
+
+  create_table "expeditions_teleshows", id: false, force: :cascade do |t|
+    t.bigint "expedition_id", null: false
+    t.bigint "teleshow_id", null: false
   end
 
   create_table "forms", force: :cascade do |t|
@@ -32,8 +53,16 @@ ActiveRecord::Schema.define(version: 20180513103819) do
     t.integer "expedition_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "position"
     t.index ["expedition_id"], name: "index_forms_on_expedition_id"
     t.index ["user_id"], name: "index_forms_on_user_id"
+  end
+
+  create_table "positions", force: :cascade do |t|
+    t.string "name", null: false
+    t.string "info"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "regions", force: :cascade do |t|

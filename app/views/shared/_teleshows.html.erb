@@ -1,0 +1,12 @@
+<ul class="row">
+  <% @teleshows.each do |teleshow| %>
+    <li class="col-md-4">
+      <%= image_tag(teleshow.image.url(:medium), class: 'img-circle') %>
+      <strong class="center"><%= teleshow.name %></strong>
+      <br>
+      Chanel: <%= teleshow.chanel %>
+      <br>
+      <%= teleshow.info %>
+    </li>
+  <% end %>
+</ul>

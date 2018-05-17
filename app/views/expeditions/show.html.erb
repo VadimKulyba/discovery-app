@@ -5,7 +5,10 @@
       <strong>Name:</strong>
       <%= @expedition.name %>
     </h1>
-    <div class="col-lg-offset-3">
+    <h1>
+      <%= image_tag(@expedition.cover.url(:medium)) %>
+    </h1>
+    <div>
       <div class="form-group">
         <h4>
           <strong>Target:</strong>
@@ -14,15 +17,70 @@
       </div>
       <div class="form-group">
         <h4>
-          <strong>Plan:</strong>
+          <strong>Plan:</strong><br>
           <%= @expedition.plan %>
         </h4>
       </div>
-
+      <div class="form-group">
+        <h4>
+          <strong>Start:</strong>
+          <%= @expedition.start %><br>
+          <strong>Finish:</strong>
+          <%= @expedition.finish %>
+        </h4>
+      </div>
+      <input class="hide" id="hd-1" type="checkbox" >
+      <label for="hd-1" class="badge">Show info</label>
+      <div>
+        <div class="form-group">
+          <h3>
+            <strong>Team:</strong><br>
+            <ul>
+              <% @expedition.positions.each do |position|%>
+                <li>
+                  <%= position.name %><br>
+                </li>
+              <% end %>
+            </ul>
+          </h3>
+        </div>
+        <div class="form-group">
+          <h3>
+            <strong>Regions:</strong><br>
+            <ul>
+              <% @expedition.regions.each do |region|%>
+                <li>
+                  <%= region.name %><br>
+                </li>
+              <% end %>
+            </ul>
+          </h3>
+        </div>
+      </div>
+      <br>
       <%= link_to 'Edit', edit_expedition_path(@expedition), class: 'badge' %>
       <%= link_to 'Back', expeditions_path, class: 'badge' %>
-      <%= render 'shared/follow_form'%>
     </div>
   </div>
-
+  <div class="col-md-1"></div>
+  <div class="col-md-6">
+    <%= render 'shared/follow_form'%>
+    <div>
+      <% if @forms.present? %>
+        <table class="table table-hover">
+          <caption class="text-center">Followers</caption>
+          <tr>
+            <th>Email</th>
+            <th>Position</th>
+          </tr>
+          <% @forms.each do |f|%>
+            <tr>
+              <td><%= User.find(f.user_id).email %></td>
+              <td><%= f.position %></td>
+            </tr>
+          <% end %>
+        </table>
+      <% end %>
+    </div>
+  </div>
 </div>

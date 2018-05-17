@@ -1,4 +1,5 @@
 class RegionsController < ApplicationController
+  load_and_authorize_resource
   def index
     @regions = Region.all.order(:created_at)
                      .paginate(page: params[:page], per_page: 3)
@@ -15,9 +16,11 @@ class RegionsController < ApplicationController
   def create
     @region = Region.new(region_params)
     if @region.save
+      flash[:success] = 'Success, create region!'
       redirect_to region_path(@region)
     else
-      redirect_to new_region_path
+      flash[:danger] = 'Error, check data'
+      render 'new'
     end
   end
 

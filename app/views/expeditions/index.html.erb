@@ -1,19 +1,18 @@
 <table class="table table-hover">
   <caption class="text-center">Expedition billboard</caption>
   <tr>
+    <th>Photo</th>
     <th>Name</th>
     <th>Target</th>
-    <th>Plan</th>
     <th></th>
   </tr>
   <% @expeditions.each do |expedition|%>
     <tr>
+      <td><%= image_tag(expedition.cover.url(:thumb)) %></td>
       <td><%= expedition.name %></td>
       <td><%= expedition.target %></td>
-      <td><%= expedition.plan %></td>
       <td>
         <%= link_to 'Show', expedition_path(expedition), class: 'btn btn-success'%>
-        <%= link_to 'Edit', edit_expedition_path(expedition), class: 'btn btn-danger' %>
         <%= link_to 'Destroy', expedition_path(expedition), class: 'btn btn-danger',
                     method: :delete,
                     data: {confirm: 'Are you sure?'}

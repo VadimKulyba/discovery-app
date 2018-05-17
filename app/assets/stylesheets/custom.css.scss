@@ -27,6 +27,27 @@ textarea {
   margin-bottom: 10px;
 }
 
+/* footer */
+
+footer {
+  color: #999;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+  margin-left: 10px;
+}
+
+footer a {
+  color: #4be1af;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 10px;
+}
+
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
@@ -134,4 +155,31 @@ caption {
       border-bottom: 1px solid #4be1af;
     }
   }
+}
+
+/* скрываем чекбоксы и блоки с содержанием */
+.hide, .hide + label ~ div {
+  display: none;
+}
+/* вид текста label */
+.hide + label,
+.hide:checked + label {
+  padding: 0;
+  font-size: 20px;
+  color: #4be1af;
+  cursor: pointer;
+  border-bottom: 1px dotted #4be1af;
+}
+/* вид текста label при активном переключателе */
+.hide:checked + label {
+  color: #4be1af;
+  border-bottom: 0;
+}
+/* когда чекбокс активен показываем блоки с содержанием  */
+.hide:checked + label + div {
+  display: block;
+  /*-moz-box-shadow: inset 3px 3px 10px;
+  -webkit-box-shadow: inset 3px 3px 10px;
+  box-shadow: inset 3px 3px 10px;*/
+  padding: 10px;
 }

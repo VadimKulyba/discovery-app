@@ -1,0 +1,7 @@
+<div class="col-xs-offset-11">
+  <%=  form_for(current_user.forms.find_by(expedition_id: @expedition),
+                html: { method: :delete },
+                remote: true) do |form|%>
+    <%= form.submit 'Unfollow', class: 'btn btn-large' %>
+  <% end %>
+</div>

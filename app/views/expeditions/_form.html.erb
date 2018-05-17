@@ -4,11 +4,11 @@
     <div id="error_explanation">
       <h2>
         <%= pluralize(@expedition.errors.count, 'error') %>
-        prohibited this article from being saved:
+        prohibited this expedition from being saved:
       </h2>
       <ul>
         <% @expedition.errors.full_messages.each do |msg| %>
-          <li><%= msg %></li>
+          <li class="center"><%= msg %></li>
         <% end %>
       </ul>
     </div>
@@ -16,11 +16,23 @@
 
 
   <div class="row">
-    <div class="col-md-6 col-md-offset-3">
-      <div class="form-group">
-        <%= form.label :name %><br>
-        <%= form.text_field( :name, class: 'form-control') %>
-      </div>
+    <div class="form-group col-md-6 col-lg-offset-3">
+      <%= form.label :name %><br>
+      <%= form.text_field( :name, class: 'form-control') %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3">
+      <%= form.label "Chose needs position for expedition:" %><br />
+      <%= form.collection_check_boxes :position_ids, Position.all, :id, :name do |b| %>
+        <div class="collection-check-box">
+          <%= b.check_box %>
+          <%= b.label %>
+        </div>
+      <% end %>
+    </div>
+    <div class="col-md-6">
       <div class="form-group">
         <%= form.label(:target) %><br>
         <%= form.text_field( :target, class: 'form-control') %>
@@ -44,9 +56,35 @@
             });
         </script>
       </div>
-
+      <br>
+      <div class="form-group col-md-6">
+        <%= form.label(:cover) %><br>
+        <%= form.file_field :cover %>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div>
+        <%= form.label "Chose your expedition regions:" %><br />
+        <%= form.collection_check_boxes :region_ids, Region.all, :id, :name do |b| %>
+          <div class="collection-check-box">
+            <%= b.check_box %>
+            <%= b.label %>
+          </div>
+        <% end %>
+      </div>
+      <br>
+      <div>
+        <%= form.label "Chose TV-show:" %><br />
+        <%= form.collection_check_boxes :teleshow_ids, Teleshow.all, :id, :name do |b| %>
+          <div class="collection-check-box">
+            <%= b.check_box %>
+            <%= b.label %>
+          </div>
+        <% end %>
+      </div>
     </div>
   </div>
+
   <br>
   <div class="center">
     <%= form.submit(class: 'btn btn-success') %>

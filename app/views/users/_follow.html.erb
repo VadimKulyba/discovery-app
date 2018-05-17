@@ -1,0 +1,15 @@
+<%= form_for(current_user.forms.build(expedition_id: @expedition.id),
+             remote: true) do |form|%>
+  <div><%= form.hidden_field :expedition_id %></div>
+  <div class="row">
+    <div class="col-md-7"></div>
+    <div class="col-md-4">
+      <%= form.label :position %><br>
+      <%= form.text_field( :position, class: 'form-control') %>
+    </div>
+    <div class="col-xs-offset-11">
+      <br>
+      <%= form.submit 'Follow', class: 'btn btn-large btn-primary' %>
+    </div>
+  </div>
+<% end %>
