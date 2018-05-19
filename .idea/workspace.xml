@@ -1,59 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a2576d3d-778f-49cf-92d3-7f29ec8df0cf" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
-      <change beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d20d69c2-a6d8-4d92-94aa-1d489bb76003.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/d20d69c2-a6d8-4d92-94aa-1d489bb76003.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d20d69c2-a6d8-4d92-94aa-1d489bb76003/storage_v2/_src_/database/discovery.sIXG-A/schema/public.abK9xQ.meta" afterPath="$PROJECT_DIR$/.idea/dataSources/d20d69c2-a6d8-4d92-94aa-1d489bb76003/storage_v2/_src_/database/discovery.sIXG-A/schema/public.abK9xQ.meta" />
-      <change beforePath="$PROJECT_DIR$/.idea/discovery-app.iml" afterPath="$PROJECT_DIR$/.idea/discovery-app.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/expeditions.coffee" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/forms.coffee" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/regions.coffee" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/teleshows.coffee" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/users.coffee" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/expeditions.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/forms.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/regions.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/teleshows.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/users.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/expeditions_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/expeditions_controller.rb" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/forms_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/forms_controller.rb" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/regions_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/regions_controller.rb" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/teleshows_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/teleshows_controller.rb" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
-      <change beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" />
-      <change beforePath="$PROJECT_DIR$/app/helpers/expeditions_helper.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/helpers/forms_helper.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/helpers/regions_helper.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/helpers/teleshows_helper.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/helpers/users_helper.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/models/expedition.rb" afterPath="$PROJECT_DIR$/app/models/expedition.rb" />
-      <change beforePath="$PROJECT_DIR$/app/models/region.rb" afterPath="$PROJECT_DIR$/app/models/region.rb" />
-      <change beforePath="$PROJECT_DIR$/app/models/teleshow.rb" afterPath="$PROJECT_DIR$/app/models/teleshow.rb" />
-      <change beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change beforePath="$PROJECT_DIR$/app/views/expeditions/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/expeditions/_form.html.erb" />
-      <change beforePath="$PROJECT_DIR$/app/views/expeditions/index.html.erb" afterPath="$PROJECT_DIR$/app/views/expeditions/index.html.erb" />
-      <change beforePath="$PROJECT_DIR$/app/views/expeditions/show.html.erb" afterPath="$PROJECT_DIR$/app/views/expeditions/show.html.erb" />
-      <change beforePath="$PROJECT_DIR$/app/views/forms/create.js.erb" afterPath="$PROJECT_DIR$/app/views/forms/create.js.erb" />
-      <change beforePath="$PROJECT_DIR$/app/views/forms/destroy.js.erb" afterPath="$PROJECT_DIR$/app/views/forms/destroy.js.erb" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/mailer.html.erb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/mailer.text.erb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/views/regions/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/regions/_form.html.erb" />
-      <change beforePath="$PROJECT_DIR$/app/views/shared/_follow_form.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_follow_form.html.erb" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/_follow.html.erb" afterPath="$PROJECT_DIR$/app/views/users/_follow.html.erb" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/_unfollow.html.erb" afterPath="$PROJECT_DIR$/app/views/users/_unfollow.html.erb" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-    </list>
+    <list default="true" id="a2576d3d-778f-49cf-92d3-7f29ec8df0cf" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/public/system/" />
@@ -82,6 +30,32 @@
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="discovery@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="discovery@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="discovery@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="discovery: database" type="6d9b600a:PostgresImplModel$Database" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="discovery@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="discovery: database" type="6d9b600a:PostgresImplModel$Database" />
+        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="discovery@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="discovery: database" type="6d9b600a:PostgresImplModel$Database" />
+        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
     </expand>
     <select />
@@ -434,8 +408,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="RailsProjectView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -556,7 +529,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -717,23 +691,24 @@
       <workItem from="1526381882765" duration="1003000" />
       <workItem from="1526388163747" duration="4800000" />
       <workItem from="1526393680476" duration="776000" />
+      <workItem from="1526539949485" duration="593000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95780000" />
+    <option name="totallyTimeSpent" value="96373000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1857" height="1092" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32006633" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32393587" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24745762" sideWeight="0.5029542" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18242122" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18242122" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27657378" sideWeight="0.4970458" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27657378" sideWeight="0.4970458" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
