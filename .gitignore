@@ -14,7 +14,6 @@
 !/public/system/*
 !/log/.keep
 !/tmp/.keep
-!/.idea/*
 
 /config/database.yml
 
@@ -22,3 +21,4 @@
 /yarn-error.log
 
 .byebug_history
+.idea
